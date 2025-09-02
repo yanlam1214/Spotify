@@ -2,11 +2,11 @@
 
 A simplified version of Spotify’s Discover Weekly recommendation system. This project simulates how new songs can be suggested to users over time, based on their listening history, favorite genres, and mood shifts.
 
-📌 Project Overview
+## 📌 Project Overview
 
 This project mimics the idea behind Spotify’s "Discover Weekly," where users receive personalized song recommendations every week. Since the scope is simplified, the algorithm evolves in three weekly stages:
 
-Week 1 – Individual Choice
+### Week 1 – Individual Choice
 
 Users receive 5 suggested songs based on similarity to their past listening history.
 
@@ -14,7 +14,7 @@ Rule: If a playlist contains 3 songs the user already listened to and 3 songs th
 
 From that playlist, 5 songs are suggested.
 
-Week 2 – Genres
+### Week 2 – Genres
 
 Songs are classified into Pop, Rock, or Techno.
 
@@ -26,7 +26,7 @@ If the difference ≤10% → multiple genres are considered equally important.
 
 5 new songs are suggested from the identified genre(s).
 
-Week 3 – Mood Shifts
+### Week 3 – Mood Shifts
 
 Songs are classified into Happy, Party, Calming, or Lounge.
 
@@ -40,7 +40,7 @@ If multiple moods are close in count → the system balances suggestions across 
 
 Again, 5 songs are recommended.
 
-⚙️ Assumptions
+## ⚙️ Assumptions
 
 100 users, each with a listening history.
 
@@ -50,13 +50,13 @@ Recommendations may repeat across weeks.
 
 Simplified rules for determining "dominant" genres/moods.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 Python (core logic & algorithms)
 
 Data structures: lists, dictionaries for users/playlists/songs
 
-🚀 How It Works
+## 🚀 How It Works
 
 Generate user listening history.
 
@@ -64,7 +64,7 @@ Apply weekly algorithms (Week 1 → Week 2 → Week 3).
 
 Output suggested songs for each user.
 
-📊 Example Flow
+## 📊 Example Flow
 
 User A listens to: Rock (20), Pop (18), Techno (5).
 
